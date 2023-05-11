@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #02295a;
+  cursor: pointer;
+}
+
+.toggle-switch-handle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-switch-handle.right {
+  transform: translateX(0);
+}
+
+.toggle-switch-handle.left {
+  transform: translateX(30px);
+}
+
+.custom-checkbox {
+  color: blue;
+  background-color: white;
+  border-color: gray;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 0 0 2px blue;
+  border-width: 1px;
+  padding: 0.25rem;
+}
